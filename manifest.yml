@@ -1,0 +1,9 @@
+applications:
+ - name: loneworker
+   memory: 1G
+   path: target/loneworker-0.0.1-SNAPSHOT.jar
+   random-route: false
+   buildpacks:
+   - sap_java_buildpack
+   services:
+   - hana_trial
